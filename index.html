@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+    <script src="./js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="header">软工三班</div>
+    <div class="nav-wrap">
+        <div class="nav-box">
+            <a href="#">
+                <img src="./imgs/01.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#">
+                <img src="./imgs/02.png" alt="">
+                <span>笔试</span>
+            </a>
+            <a href="#">
+                <img src="./imgs/03.png" alt="">
+                <span>技术面试</span>
+            </a>
+            <a href="#">
+                <img src="./imgs/04.png" alt="">
+                <span>模拟面试</span>
+            </a>
+            <a href="#">
+                <img src="./imgs/05.png" alt="">
+                <span>面试技巧</span>
+            </a>
+            <a href="#">
+                <img src="./imgs/06.png" alt="">
+                <span>薪资查询</span>
+            </a>
+        </div>
+        <div class="ad">
+            <img src="./imgs/ad.png" alt="">
+        </div>
+    </div>
+    <div class="job">
+        <div class="title">
+            <div class="title-left">
+                <img src="./imgs/question.png" alt="">
+                <span>就业指导</span>
+            </div>
+            <div class="title-right">
+                <span>更多>></span>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide fade">
+                    <img src="./upload/koayan.jpg" alt="" srcset="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./upload/koayan.jpg" alt="" srcset="">
+                </div>
+                <div class="swiper-slide fade">
+                    <img src="./upload/koayan.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="subtext">我们在成长！</div>
+        <div class="player"></div>
+    </div>
+    <div class="learn">
+         <div class="title">
+            <div class="title-left">
+                <img src="./imgs/power.png" alt="">
+                <span>充电学习</span>
+            </div>
+            <div class="title-right">
+                <span>更多>></span>
+            </div>
+        </div>
+        <div class="learn-list">
+            <a href="#" class="card">
+                <img src="./upload/bt.jpg" alt="" srcset="">
+                <div class="learn-dis">
+                    <div class="learn-title">Bootstrap从入门到精通</div>
+                    <div class="learn-num">
+                        <span class="num">156</span>
+                        <span>人学习</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <img src="./upload/bt.jpg" alt="" srcset="">
+                <div class="learn-dis">
+                    <div class="learn-title">C语言从入门到精通</div>
+                    <div class="learn-num">
+                        <span class="num">125</span>
+                        <span>人学习</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <img src="././upload/bt.jpg" alt="" srcset="">
+                <div class="learn-dis">
+                    <div class="learn-title">JAVA从入门到精通</div>
+                    <div class="learn-num">
+                        <span class="num">166</span>
+                        <span>人学习</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <img src="./upload/php.jfif" alt="" srcset="">
+                <div class="learn-dis">
+                    <div class="learn-title">PHP从入门到精通</div>
+                    <div class="learn-num">
+                        <span class="num">364</span>
+                        <span>人学习</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="card">
+                <img src="./upload/it.jfif" alt="" srcset="">
+                <div class="learn-dis">
+                    <div class="learn-title">IT职业素养</div>
+                    <div class="learn-num">
+                        <span class="num">44</span>
+                        <span>人学习</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-item">
+            <img src="./imgs/zhuye.png" alt="">
+            <span class="name">主页</span>
+        </div>
+        <div class="footer-item">
+            <img src="./imgs/tuceng.png" alt="">
+            <span class="name">文件</span>
+        </div>
+        <div class="footer-item">
+            <img src="./imgs/xiezi.png" alt="">
+            <span class="name">测试</span>
+        </div>
+        <div class="footer-item">
+            <img src="./imgs/wode.png" alt="">
+            <span class="name">我的</span>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            initialSlide: 1,
+            effect: 'coverflow',
+            slidesPerView: 3,
+            centeredSlides: true,
+        });
+    </script>
+</body>
+
+</html>

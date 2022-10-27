@@ -1,0 +1,302 @@
+@media screen and (min-width:750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+body {
+    max-width: 750px;
+    min-width: 320px;
+    font-family: MicrosoftYaHei, MicrosoftYaHei-Regular;
+    background: #F2F4F7;
+    margin: 0 auto;
+}
+
+// 头部标题
+.header {
+    width: 100%;
+    line-height: 1.3333rem;
+    text-align: center;
+    background-color: #fff;
+    font-size: .4667rem;
+    font-family: "Adobe Heiti Std";
+    color: #1C1C1C;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+// 页面导航
+.nav-wrap {
+    background-color: #fff;
+    padding-bottom: .6rem;
+    margin-bottom: .1333rem;
+
+    .nav-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: .6rem;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 33.33%;
+
+            img {
+                width: 1.8667rem;
+                height: 1.8667rem;
+            }
+
+            span {
+                color: #707070;
+                font-size: .3333rem;
+                margin: .24rem 0 .9333rem;
+            }
+        }
+    }
+
+    // 横幅图片
+    .ad {
+        height: 2.0267rem;
+        padding: 0 .1867rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// 就业指导
+.job {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: .1333rem;
+    padding: .5333rem .32rem;
+    position: relative;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .5333rem;
+
+        .title-left {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: .4933rem;
+                height: .4933rem;
+            }
+
+            span {
+                margin-left: .24rem;
+                font-size: .3733rem;
+                color: #333333;
+            }
+        }
+
+        .title-right {
+            display: flex;
+            align-items: center;
+            font-size: .2933rem;
+            color: #999999;
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 4.5067rem;
+
+        .swiper-slide {
+            width: 4rem;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 5.0133rem;
+                object-fit: cover;
+            }
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: .6rem;
+            color: #333333;
+        }
+
+        .fade {
+            opacity: .4;
+
+            img {
+                height: 4.24rem;
+            }
+        }
+    }
+
+    .subtext {
+        display: flex;
+        justify-content: center;
+        margin-top: .32rem;
+        font-size: .3333rem;
+        color: #333333;
+        line-height: .5333rem;
+        letter-spacing: .0084rem;
+    }
+
+    // 播放按钮
+    .player {
+        width: .9067rem;
+        height: .9067rem;
+        background-color: #000;
+        opacity: 0.6;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50% - .4533rem);
+        top: calc(50% - .4533rem);
+        z-index: 999;
+
+        &::after {
+            content: "";
+            width: 0;
+            height: 0;
+            background-color: #F2F4F7;
+            opacity: 1;
+            border-top: .1733rem solid;
+            border-left: .3467rem solid #fff;
+            border-bottom: .1733rem solid;
+            display: block;
+            position: absolute;
+            left: calc(50% - .14rem);
+            top: calc(50% - .1733rem);
+            z-index: 9999;
+        }
+    }
+
+}
+
+// 充电学习
+.learn {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: .5333rem .32rem;
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .5333rem;
+
+        .title-left {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: .4933rem;
+                height: .4933rem;
+            }
+
+            span {
+                margin-left: .24rem;
+                font-size: .3733rem;
+                color: #333333;
+            }
+        }
+
+        .title-right {
+            display: flex;
+            align-items: center;
+            font-size: .2933rem;
+            color: #999999;
+        }
+    }
+
+    .learn-list {
+        display: flex;
+        width: 100%;
+        height: 5.16rem;
+        overflow: hidden;
+        overflow-x: auto;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            width: 3.84rem;
+            padding: .1067rem;
+            margin-right: .16rem;
+            height: 4.56rem;
+            background-color: #fff;
+            border-radius: .1333rem;
+            box-shadow: 0 0 4px 2px rgba(37, 37, 37, 0.07);
+
+            img {
+                width: 3.6267rem;
+                height: 2.28rem;
+                border-radius: .1333rem;
+            }
+
+            // 描述
+            .learn-dis {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 3.6267rem;
+                height: 2.28rem;
+                box-sizing: border-box;
+                // padding: .2133rem 0;
+                .learn-title {
+                    font-size: .4rem;
+                    color: #333333;
+
+                }
+                .learn-num{
+                    font-size: .3467rem;
+                    color: #a9a9a9;
+                    .num{
+                        color: #ff6933;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1.3333rem;
+    background-color: #fff;
+    border-top: 1px solid #EAEAEA;
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: .5333rem;
+            height: .5333rem;
+        }
+        .name{
+            margin-top: .1867rem;
+            color: #666666;
+            font-size: .2933rem;
+        }
+    }
+}
